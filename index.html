@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-  <title>XXX's Curry Recipe</title>
+  <title>原田航 ポートフォリオ</title>
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=yes" />
@@ -15,42 +15,36 @@
   <link rel="stylesheet" href="main.css" />
   </head>
 
-  <body> <!-- ここから本文開始 -->
+ 
+  <title>ボタンで異なる文を表示</title>
+</head>
+<body>
+  <button id="button1">ボタン1</button>
+  <button id="button2">ボタン2</button>
+  <button id="button3">ボタン3</button>
+  <p id="textDisplay"></p>
 
-    <h1>影山飛雄's Curry Recipe</h1>
-    <p>
-      我が家に伝わる一子相伝・門外不出の<strong>秘伝のカレーレシピ</strong>を
-      今だけ特別に大公開！<br />
-      このカレーがなぜ代々受け継がれてきたのか、その魅力をあなたも実感してください。
-      秘伝のスパイスと調理法、家族を幸せにする魔法の一皿を体験してください！
-    </p>
+  <script>
+    // ボタン要素と文を表示するためのp要素を取得
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const button3 = document.getElementById('button3');
+    const textDisplay = document.getElementById('textDisplay');
 
-    <img src="curryrice.jpg" alt="カレーライスの画像" width="100%" />
+    // ボタン1がクリックされたときの処理
+    button1.addEventListener('click', function() {
+      textDisplay.textContent = "ボタン1がクリックされました。";
+    });
 
-    <h2>材料</h2>
-    <p>
-      <strong>8皿分の分量</strong
-      >です。<br />
-      予算や気分にあわせて具材を追加したり、量を調整してください。
-    </p>
+    // ボタン2がクリックされたときの処理
+    button2.addEventListener('click', function() {
+      textDisplay.textContent = "ボタン2がクリックされました。";
+    });
 
-    <ul>
-      <li>市販のカレールー（中辛）... 1/2箱</li>
-      <li>鶏肉 ... 400g</li>
-      <li>玉ねぎ ... 3個（中サイズ）</li>
-      <li>ジャガイモ ... 2個</li>
-      <li>にんにく ... 1片</li>
-      <li>水 ... 700ml</li>
-      <li>サラダ油 ... 大さじ1</li>
-      <li>
-        <a href="https://ja.wikipedia.org/wiki/ガラムマサラ">ガラムマサラ</a>
-        ... 適量
-      <li>
-        <a href="https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B3%E3%83%B3">ターメリック</a>
-        ... 適量
-    </ul>
-
-    <h2>作り方</h2>
-    <p>近日大公開！</p>
-  </body> <!-- ここまで本文終了 -->
+    // ボタン3がクリックされたときの処理
+    button3.addEventListener('click', function() {
+      textDisplay.textContent = "ボタン3がクリックされました。";
+    });
+  </script>
+</body>
 </html>

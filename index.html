@@ -15,16 +15,16 @@
   <link rel="stylesheet" href="main.css" />
   </head>
 
- 
-  <title>ボタンで異なる文を表示</title>
-</head>
-<body>
-  <button id="button1">ボタン1</button>
-  <button id="button2">ボタン2</button>
-  <button id="button3">ボタン3</button>
-  <p id="textDisplay"></p>
+  <body> 
+   <title>Wataru Harada's portfolio</title>
 
-  <script>
+
+   <button id="button1">PROFILE</button>
+   <button id="button2">WORKS</button>
+   <button id="button3">SKILL</button>
+   <p id="textDisplay"></p>
+
+   <script>
     // ボタン要素と文を表示するためのp要素を取得
     const button1 = document.getElementById('button1');
     const button2 = document.getElementById('button2');
@@ -45,6 +45,6 @@
     button3.addEventListener('click', function() {
       textDisplay.textContent = "ボタン3がクリックされました。";
     });
-  </script>
-</body>
+   </script>
+ </body>
 </html>

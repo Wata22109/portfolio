@@ -16,14 +16,14 @@
   </head>
 
   <body> 
-    <h2 class="heading15">Wataru Harada's portfolio</h2>
+    <h1>Wataru Harada's portfolio</h1>
 
    <div align="center" class="example">
    <button id="button1" style="background-color:black; border-color:black; color:white"><p class="em">PROFILE</p></button>
-   <button id="button2" style="background-color:black; border-color:black; color:white"><p class="em">WORKS</p></b></button>
+   <button id="button2" style="background-color:black; border-color:black; color:white"><p class="em">WORKS</p></button>
    <button id="button3" style="background-color:black; border-color:black; color:white"><p class="em">SKILL</p></button>
-   <p id="textDisplay"></p>
-   <div>
+   <div id="textDisplay"></div>
+   
 
    <script>
     // ボタン要素と文を表示するためのp要素を取得
@@ -32,20 +32,30 @@
     const button3 = document.getElementById('button3');
     const textDisplay = document.getElementById('textDisplay');
 
-    // ボタン1がクリックされたときの処理
+     // ボタン1がクリックされたときの処理
     button1.addEventListener('click', function() {
-      textDisplay.textContent = "ボタン1がクリックされました。";
+      // HTMLタグを含む文を設定
+      const displayedText = '<p>原田航(17歳) 大阪公立大学工業高等専門学校 2年知能情報コース</p>';
+      // 文を表示する
+      textDisplay.innerHTML = displayedText;
     });
 
     // ボタン2がクリックされたときの処理
     button2.addEventListener('click', function() {
-      textDisplay.textContent = "ボタン2がクリックされました。";
+      // HTMLタグを含む文を設定
+      const displayedText = '<em>ボタン2がクリックされました。</em>';
+      // 文を表示する
+      textDisplay.innerHTML = displayedText;
     });
 
     // ボタン3がクリックされたときの処理
     button3.addEventListener('click', function() {
-      textDisplay.textContent = "ボタン3がクリックされました。";
+      // HTMLタグを含む文を設定
+      const displayedText = '<p><h2>使用経験のあるプログラミング言語やソフトウェア</h2><h3>・プログラミング言語</h3>  「python」, 「Alduino」</p><br/><p><h3>・ソフトウェア</h3>  「Git/GitHub」, 「VSCode」, 「ArduinoIDE」, 「Deeds-DCS」, 「MakeCode for micro:bit」, 「Tinkercad」, 「WSL」「Ambient」「Real VNC」</p>';
+      // 文を表示する
+      textDisplay.innerHTML = displayedText;
     });
-   </script>
-  </body>
+  </script>
+</body>
 </html>
+ 

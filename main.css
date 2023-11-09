@@ -1,3 +1,11 @@
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	--theme-color-1: #f50;
+	--theme-color-2: #fc3;
+	color: #454545;
+  }
+
 h1 {
 	text-align: center;
 	font-size: 4rem;
@@ -23,6 +31,10 @@ h1 {
 h2 {
 	border-bottom: 2px solid black;
   }
+img {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 20px;
+  }
 .heading15 {
 	position: relative;
 	padding-bottom: 20px;
@@ -45,6 +57,20 @@ h3 {
 	text-decoration: underline;
 	text-decoration-color: black;
 	text-decoration-thickness: 1px;
+  }
+a {
+	text-decoration: none;
+	color: var(--theme-color-1);
+	cursor: pointer;
+	border-bottom: 1.5px dashed;
+	transition: background-color 0.5s;
+  }
+  
+  a:hover {
+	color: white;
+	background-color: var(--theme-color-1);
+	border-radius: 4px;
+	border-bottom: none;
   }
 .em {
   font-size: 1.5em

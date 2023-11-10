@@ -26,25 +26,27 @@
    
 
    <script>
-    // ボタン要素と文を表示するためのp要素を取得
-    const button1 = document.getElementById('button1');
-    const button2 = document.getElementById('button2');
-    const button3 = document.getElementById('button3');
-    const textDisplay = document.getElementById('textDisplay');
+document.addEventListener('DOMContentLoaded', function() {
+  const textDisplay = document.getElementById('textDisplay');
 
-     // ボタン1がクリックされたときの処理
-    button1.addEventListener('click', function() {
-      
-      const displayedText = '<br/><strong>こんにちは。平成18年生まれ17歳の原田航です。<br/> 大阪公立大学工業高等専門学校\
+  const initialText = '<br/><strong>こんにちは。平成18年生まれ17歳の原田航です。<br/> 大阪公立大学工業高等専門学校\
       総合工学システム学科<br/> 2年生知能情報コースに在籍しています。<br/>音楽が好きで趣味でドラムをやっています。</strong>';
-  
-      textDisplay.innerHTML = displayedText;
-    });
 
-    // ボタン2がクリックされたときの処理
-    button2.addEventListener('click', function() {
-     
-      const displayedText ='<p><h2><a href="https://github.com/Wata22109/free-issue.git">自由課題として作成したプログラム 2023 7/26</a></h2>\
+  textDisplay.innerHTML = initialText;
+
+  const button1 = document.getElementById('button1');
+  const button2 = document.getElementById('button2');
+  const button3 = document.getElementById('button3');
+
+  button1.addEventListener('click', function() {
+    const displayedText = '<br/><strong>こんにちは。平成18年生まれ17歳の原田航です。<br/> 大阪公立大学工業高等専門学校\
+      総合工学システム学科<br/> 2年生知能情報コースに所属しています。<br/>音楽が好きで趣味でドラムをやっています。</strong>';
+  
+    textDisplay.innerHTML = displayedText;
+  });
+
+  button2.addEventListener('click', function() {
+    const displayedText = '<p><h2><a href="https://github.com/Wata22109/free-issue.git">自由課題として作成したプログラム 2023 7/26</a></h2>\
         <h3>概要</h3>このプログラムは中之島方面に行く電車が現在時刻から<br/>何分後に寝屋川市駅に到着するか表示するプログラムです。<br/>\
         また、到着するまでの時間によって学校から歩いても<br/>間に合うのか、急ぐべきなのかを表示します。</p><br/>\
         <img src="free issue.jpeg" alt="自由課題" width="80%" />\
@@ -54,20 +56,21 @@
         主人公の数字が<br/>0になるか、自分より数字の大きい敵に戦いを挑むとゲームオーバーです。<br/>すべての敵とアイテムを消したらゲームクリアです。<br/>\
         自分は背景以外の、キャラクターや建物などのデザインを担当しました。<br/>ドットで書いたので体の形や影の表現がとても難しかったです。</p><br/>\
         <img src="高専祭.jpeg" alt="高専祭" width="80%" />';
-        // 文を表示する
-      textDisplay.innerHTML = displayedText;
-    });
+    textDisplay.innerHTML = displayedText;
+  });
 
-    // ボタン3がクリックされたときの処理
-    button3.addEventListener('click', function() {
-    
-      const displayedText = '<p><h2>SKILL</h2><h3>・使用経験のあるプログラミング言語</h3>\
+  button3.addEventListener('click', function() {
+    const displayedText = '<p><h2>SKILL</h2><h3>・使用経験のあるプログラミング言語</h3>\
           「python」, 「Alduino」</p><br/><p><h3>・使用経験のあるソフトウェア</h3>  「Git/GitHub」,\
           「VSCode」, 「ArduinoIDE」,<br/> 「Deeds-DCS」, 「MakeCode for micro:bit」,<br/>\
           「Tinkercad」, 「WSL」,「Ambient」,「Real VNC」</p><br/><p><h3>・保有資格</h3>「ITパスポート」</p>';
-      // 文を表示する
-      textDisplay.innerHTML = displayedText;
-    });
+    textDisplay.innerHTML = displayedText;
+  });
+
+  button1.disabled = false;
+  button2.disabled = false;
+  button3.disabled = false;
+});
   </script>
 </body>
 </html>

@@ -5,7 +5,12 @@ html {
 	--theme-color-2: #fc3;
 	color: #454545;
   }
-
+  
+#container {
+    max-width: 800px; /* 例えば、最大幅を指定 */
+    margin: 0 auto;  /* 中央寄せにするためのマージン指定 */
+    padding: 20px;   /* コンテンツとコンテナの余白を指定 */
+}
 h1 {
 	text-align: center;
 	font-size: 4rem;

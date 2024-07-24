@@ -7,7 +7,7 @@ html {
   }
   
 #container {
-    max-width: 800px; /* 例えば、最大幅を指定 */
+    max-width: 900px; /* 例えば、最大幅を指定 */
     margin: 0 auto;  /* 中央寄せにするためのマージン指定 */
     padding: 20px;   /* コンテンツとコンテナの余白を指定 */
 }

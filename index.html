@@ -1,89 +1,202 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-  <title>原田航 ポートフォリオ</title>
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" />
-  <link rel="stylesheet" href="main.css" />
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wataru's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main-Wataru.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Wataru's Portfolio</h1>
+            <p>大阪公立大学工業高等専門学校総合工学システム学科 知能情報コース</p>
+            <div class="nav">
+                <button class="nav-button" onclick="scrollToSection('profile')">PROFILE</button>
+                <button class="nav-button" onclick="scrollToSection('works')">WORKS</button>
+                <button class="nav-button" onclick="scrollToSection('skills')">SKILLS</button>
+            </div>
+        </div>
+    </header>
 
-  <body> 
-    <h1>Wataru Harada's portfolio</h1>
+    <main class="content">
+        <section id="profile" class="section">
+            <h2>Profile</h2>
+            <p>こんにちは。平成18年生まれ18歳の原田航です。音楽が好きで趣味でドラムをやっています。</p>
+        </section>
 
-   <div align="center" class="example">
-   <button id="button1" style="background-color:black; border-color:black; color:white"><p class="em">PROFILE</p></button>
-   <button id="button2" style="background-color:black; border-color:black; color:white"><p class="em">WORKS</p></button>
-   <button id="button3" style="background-color:black; border-color:black; color:white"><p class="em">SKILL</p></button>
-   <div id="textDisplay"></div>
-   
+        <section id="works" class="section">
+            <h2>Works</h2>
+            <div class="works-grid">
+                <div class="work-card">
+                    <img src="画像0.jpeg" alt="帰宅効率化アプリ">
+                    <div class="work-card-content">
+                        <h3>帰宅効率化アプリ</h3>
+                        <p>中之島方面に行く電車が寝屋川市駅に到着する時刻を表示し、学校からの所要時間を考慮したアプリケーション。</p>
+                        <a href="https://github.com/Wata22109/free-issue.git">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const textDisplay = document.getElementById('textDisplay');
+                <div class="work-card">
+                    <img src="画像1.jpeg" alt="広告で見るあのゲーム">
+                    <div class="work-card-content">
+                        <h3>広告で見るあのゲーム</h3>
+                        <p>Youtube広告でよく見るゲームの再現。6人チームでの開発で、キャラクターやオブジェクトのデザインを担当。</p>
+                        <a href="https://github.com/kk2a/kosensai2-I-B.git">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    const initialText = '<br/><strong>こんにちは。平成18年生まれ18歳の原田航です。<br/> 大阪公立大学工業高等専門学校\
-      総合工学システム学科<br/> 3年生知能情報コースに所属しています。<br/>音楽が好きで趣味でドラムをやっています。</strong>';
+                <div class="work-card">
+                    <img src="画像2.jpeg" alt="Metal Soldier">
+                    <div class="work-card-content">
+                        <h3>Metal Soldier</h3>
+                        <p>アクションゲーム。キャラクターや一部オブジェクトを自作し、AIで背景を生成。</p>
+                        <a href="https://github.com/Wata22109/Metal-Soldier.git">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    textDisplay.innerHTML = initialText;
+                <div class="work-card">
+                  <img src="画像3.jpeg" alt="単語暗記アプリ">
+                  <div class="work-card-content">
+                      <h3>単語暗記アプリ</h3>
+                      <p>英単語の意味と使い方を覚えるためのアプリ。「単語の追加」や「ランダム出題」の機能を持つ。</p>
+                      <a href="https://github.com/Wata22109/English-Vocabulary">
+                          View Project <i class="fas fa-arrow-right"></i>
+                      </a>
+                  </div>
+                </div>
 
-  const button1 = document.getElementById('button1');
-  const button2 = document.getElementById('button2');
-  const button3 = document.getElementById('button3');
+                <div class="work-card">
+                  <img src="画像4.png" alt="javascript  超基礎">
+                  <div class="work-card-content">
+                      <h3>javascript  超基礎</h3>
+                      <p>javascriptの基礎を学ぶことのできるページ。</p>
+                      <a href="https://wata22109.github.io/java_html/">
+                          View Project <i class="fas fa-arrow-right"></i>
+                      </a>
+                  </div>
+                </div>
 
-  button1.addEventListener('click', function() {
-    const displayedText = '<br/><strong>こんにちは。平成18年生まれ18歳の原田航です。<br/> 大阪公立大学工業高等専門学校\
-      総合工学システム学科<br/> 3年生知能情報コースに所属しています。<br/>音楽が好きで趣味でドラムをやっています。</strong>';
-  
-    textDisplay.innerHTML = displayedText;
-  });
+                <div class="work-card">
+                  <img src="画像5.png" alt="Todoリストアプリ">
+                  <div class="work-card-content">
+                      <h3>Todoリストアプリ</h3>
+                      <p>Reactを用いたTodoアプリ。</p>
+                      <a href="https://wata22109.github.io/react-todo-app/">
+                          View Project <i class="fas fa-arrow-right"></i>
+                      </a>
+                  </div>
+                </div>
 
-  button2.addEventListener('click', function() {
-    const displayedText = '<div id="container"><p><h2><a href="https://github.com/Wata22109/free-issue.git">帰宅効率化アプリ 2023 7/26</a></h2>\
-        <h3>概要</h3>このアプリは中之島方面に行く電車が現在時刻から何分後に寝屋川市駅に到着するか表示するプログラムです。\
-        また、到着するまでの時間によって学校から歩いても間に合うのか、急ぐべきなのかを表示します。</p><br/></div>\
-        <img src="free issue.jpeg" alt="自由課題" width="80%" />\
-        <div id="container"><p><h2><a href="https://github.com/kk2a/kosensai2-I-B.git">広告で見るあのゲーム 2023 11/5</a></h2>\
-        <h3>概要</h3>Youtubeなどの広告でよく見るゲームを再現しました。<h4>ゲームのルール</h4>主人公に数字が割り振られています。\
-        そして、敵、アイテムには数字と演算が割り振られていてクリックすることで主人公の数字に対してその計算が行われます。\
-        主人公の数字が0になるか、自分より数字の大きい敵に戦いを挑むとゲームオーバーです。すべての敵とアイテムを消したらゲームクリアです。<br/>\
-        <h4>開発</h4>6人のチームメンバーで協力して開発しました。自分は背景以外の、キャラクターや建物などのデザインを担当しました。\
-        ドットで書いたので体の形や影の表現がとても難しかったです。また、初めてのチーム開発だったので思うように意思の疎通ができず苦労しました。<br/>(右:ゲーム画面 左:制作画面)</p><br/></div>\
-        <img src="画像1.jpeg" alt="画像" width="80%" />\
-        <div id="container"><p><h2><a href="https://github.com/Wata22109/Metal-Soldier.git">Metal Soldier 2023 12~2024 1</a></h2>\
-        <h3>概要</h3>Dキーで右移動、Aキーで左移動、Wキーでジャンプ、スペースキーで射撃、Qキーで爆弾の投擲を行います。\
-        右上に体力、スペースキーで行う射撃の残り弾数、残りの爆弾の数が表示されています。敵の攻撃をかわしつつ、\
-        体力が0にならないようゴールを目指しましょう。<br/>\
-        登場するキャラクターや、一部のオブジェクトは自身で作成しています。\
-        タイトル画面や第2ステージで登場する背景はAIを用いて作成しました。  \
-        敵の挙動がおかしかったり、攻撃の判定が見た目より大きかったりとバグがとても多いです。\
-        また、ステージの構成や状況にによっては画面が重くなったり、入力より主人公の動きが遅れたりします。\
-        <br/>(右上:タイトル画面 左上:コンティニュー画面<br/>下:ゲーム画面)</p><br/></div>\
-        <img src="画像2.jpeg" alt="画像2" width="80%" />\
-        <div id="container"><p><h2><a href="https://wata22109.github.io/java_html/">javascript  超基礎 2024 7~</a></h2>';
-    textDisplay.innerHTML = displayedText;
-  });
+                <div class="work-card">
+                  <img src="画像6.png" alt="サーバー構築ガイド">
+                  <div class="work-card-content">
+                      <h3>サーバー構築ガイド</h3>
+                      <p>Linuxでのサーバー構築ガイド。</p>
+                      <a href="https://wata22109.github.io/react-todo-app/">
+                          View Project <i class="fas fa-arrow-right"></i>
+                      </a>
+                  </div>
+                </div>
 
-  button3.addEventListener('click', function() {
-    const displayedText = '<div id="container"><p><h2>SKILL</h2><h3>・使用経験のあるプログラミング言語</h3>\
-          「python」, 「Arduino」</p><br/><p><h3>・使用経験のあるソフトウェア</h3>  「Git/GitHub」,\
-          「VSCode」, 「ArduinoIDE」,「Deeds-DCS」, 「MakeCode for micro:bit」,\
-          「Tinkercad」, 「WSL」,「Ambient」,「Real VNC」</p><br/><p><h3>・保有資格</h3>「ITパスポート」「基本情報技術者資格」</p></div>';
-    textDisplay.innerHTML = displayedText;
-  });
+                <div class="work-card">
+                    <img src="画像7.png" alt="パイプつなぎゲーム">
+                    <div class="work-card-content">
+                        <h3>パイプつなぎゲーム</h3>
+                        <p>next.jsを用いてつくったwebで遊ぶことのできるパズルゲーム。supabaseを用いてステージ情報を管理している。
+                        </p>
+                        <a href="https://github.com/Wata22109/my-next-app">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                  </div>
 
-  button1.disabled = false;
-  button2.disabled = false;
-  button3.disabled = false;
-});
-  </script>
+                  <div class="work-card">
+                    <img src="画像8.png" alt="パイプつなぎゲーム(hennshuugamenn)">
+                    <div class="work-card-content">
+                        <h3>パイプつなぎゲーム(編集画面)</h3>
+                        <p>next.jsを用いてつくったwebで遊ぶことのできるパズルゲーム。
+                            ログインすることでステージの作成も可能。
+                        </p>
+                        <a href="https://my-next-fmpwj6mrg-next-blog-apps-projects.vercel.app/">
+                            Play Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>プログラミング言語</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>C/C++</li>
+                        <li>React</li>
+                        <li>Arduino</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>開発ツール</h3>
+                    <ul class="skill-list">
+                        <li>Git/GitHub</li>
+                        <li>VSCode</li>
+                        <li>ArduinoIDE</li>
+                        <li>Deeds-DCS</li>
+                        <li>WSL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>資格</h3>
+                    <ul class="skill-list">
+                        <li>ITパスポート</li>
+                        <li>基本情報技術者資格</li>
+                        <li>TOEIC 715</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Intersection Observer for section animations
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
- 

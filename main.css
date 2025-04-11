@@ -49,6 +49,9 @@ body {
     text-align: center;
     color: white;
     z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
 }
 
 .header h1 {
@@ -56,6 +59,7 @@ body {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     animation: fadeInUp 1s ease-out;
+    word-wrap: break-word;
 }
 
 .header p {
@@ -72,6 +76,8 @@ body {
     margin-top: 2rem;
     animation: fadeInUp 1s ease-out 0.4s;
     animation-fill-mode: both;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-button {

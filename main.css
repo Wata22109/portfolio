@@ -260,11 +260,16 @@ body {
     border-radius: 50px;
     transition: var(--transition);
     font-size: 0.95rem;
+    white-space: nowrap;
 }
 
 .work-card a:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
+}
+
+.work-card a i {
+    font-size: 0.9rem;
 }
 
 .skills-grid {
@@ -421,4 +426,114 @@ body {
     .highlight a:hover {
         color: var(--secondary-color);
     }
+
+    .work-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .work-card a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Contact Section Styles */
+.contact-container {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem;
+    }
+    
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+    
+    .contact-item a {
+        font-size: 1.1rem;
+    }
+}
+
+.and-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.and-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.and-more a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.and-more i {
+    transition: transform 0.3s ease;
+}
+
+.and-more a:hover i {
+    transform: translateX(5px);
 }

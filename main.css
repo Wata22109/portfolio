@@ -166,6 +166,21 @@ body {
     border-radius: 2.5px;
 }
 
+.works-subheading {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 2.5rem 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.works-subheading:first-of-type {
+    margin-top: 0;
+}
+
+.work-card-hidden {
+    display: none !important;
+}
+
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));

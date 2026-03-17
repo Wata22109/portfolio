@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wataru's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -27,9 +27,16 @@
     <main class="content">
         <section id="profile" class="section">
             <h2>Profile</h2>
-            <p>こんにちは。平成18年生まれ19歳の原田航です。音楽が好きで趣味でドラムをやっています。</p>
-            <div class="achievement">
-                <p class="highlight"><i class="fas fa-award"></i> 私が大阪公立大学工業高等専門学校の公式サイトで紹介されました！</br><a href="https://www.ct.omu.ac.jp/info/news/entry-82145.html" target="_blank">ページはこちら</a></p>
+            <div class="profile-layout">
+                <div class="profile-text">
+                    <p>こんにちは。平成18年生まれ19歳の原田航です。音楽が好きで趣味でドラムをやっています。</p>
+                    <div class="achievement">
+                        <p class="highlight"><i class="fas fa-award"></i> コース内で１位の成績を獲得した学生に贈られる奨学金の対象者に選ばれました。</br><a href="https://www.ct.omu.ac.jp/info/news/entry-82145.html" target="_blank">「ゼロワン研究所奨学金 学生懇談会を開催しました！」2025年4月30日</a></p>
+                    </div>
+                    <div class="achievement">
+                        <p class="highlight"><i class="fas fa-award"></i> 「Imprint coffee」チームとしてTec–Challenge2025に出場しました。</br><a href="https://www.ct.omu.ac.jp/info/news/entry-105127.html" target="_blank">「Tec–Challenge2025を開催しました」2026年3月6日</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -181,37 +188,41 @@
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>プログラミング言語</h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>C/C++</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Node.js</li>
-                        <li>Arduino</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL (PostgreSQL)</span>
+                        <span class="skill-tag">Arduino</span>
+                    </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>開発ツール</h3>
-                    <ul class="skill-list">
-                        <li>Git/GitHub</li>
-                        <li>VSCode</li>
-                        <li>ArduinoIDE</li>
-                        <li>Deeds-DCS</li>
-                        <li>WSL</li>
-                        <li>Docker</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">VSCode</span>
+                        <span class="skill-tag">ArduinoIDE</span>
+                        <span class="skill-tag">Deeds-DCS</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Vivado</span>
+                        <span class="skill-tag">Linux (Bash / Ubuntu)</span>
+                        <span class="skill-tag">Docker/WSL</span>
+                        <span class="skill-tag">Blender</span>
+                    </div>
                 </div>
 
                 <div class="skill-category">
                     <h3>資格</h3>
-                    <ul class="skill-list">
-                        <li>ITパスポート</li>
-                        <li>基本情報技術者資格</li>
-                        <li>TOEIC 755</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ITパスポート</span>
+                        <span class="skill-tag">基本情報技術者資格</span>
+                        <span class="skill-tag">TOEIC 755</span>
+                    </div>
                 </div>
             </div>
         </section>
